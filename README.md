@@ -1,50 +1,43 @@
-# React + TypeScript + Vite
+# 🧠 Memory Game - Test Your Memory! 🎴
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **single-page interactive game** built with **React, Vite, TypeScript, and TailwindCSS**, where players must match pairs of cards by flipping them.
 
-Currently, two official plugins are available:
+## 💡 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎴 **Memory Challenge** → Flip the cards and find all matching pairs!  
+- 🌐 **Responsive Design** → Works smoothly on desktop & mobile.  
+- 🎨 **Dynamic Card Sizing** → The cards and their icons scale with screen size for a better experience.  
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Front-end:** React, Vite, TypeScript, TailwindCSS    
+- **Deployment:** GitHub Pages  
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🔗 Live Demo
+
+👉 [Play it here!](https://jottiana.github.io/memory-game/)
+
+---
+
+## 🚀 Installation and Running the Project
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/jottiana/memory-game.git
+cd memory-game
 ```
+### 2️⃣ Install dependencies
+`npm install`
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 3️⃣ Start the development server
+`npm run dev`
+The app will be available at http://localhost:5173 (default Vite port).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
